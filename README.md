@@ -29,7 +29,7 @@ Line |
      |                 ~~~~~~~~~~~
      | No '<adapter>:' line found in output.
 ```
-...wow!
+...come on say it...WOW!
 
 ### USAGE
 1. Drop the "LogClean-Ps" batch and PowerShell scripts in the same directory as your `.log` files.
