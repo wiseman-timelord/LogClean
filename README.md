@@ -13,7 +13,7 @@ LogClean-Ps is a straightforward and efficient batch and PowerShell script combi
 - **Sleep Intervals**: Intentional short pauses after each major action for better tracking of the script's progress.
 
 ### PREVIEW
-From this kind of thing...
+From nonsense...
 ```
 [31;1mGet-GPUList: [0mD:\GameTools\AllTexConFO4-Ps\AllTexConFO4-Ps v0.05\main.ps1:124[0m
 [31;1m[0m[36;1mLine |[0m
@@ -21,7 +21,7 @@ From this kind of thing...
 [31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m                ~~~~~~~~~~~[0m
 [31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mNo '<adapter>:' line found in output.[0m
 ```
-...to this kind of thing...
+...to ah-hah...
 ```
 Get-GPUList: D:\GameTools\AllTexConFO4-Ps\AllTexConFO4-Ps v0.05\main.ps1:124
 Line |
@@ -29,7 +29,7 @@ Line |
      |                 ~~~~~~~~~~~
      | No '<adapter>:' line found in output.
 ```
-...come on say it...WOUW!
+...say it...WOUW!
 
 ### USAGE
 1. Drop the "LogClean-Ps" batch and PowerShell scripts in the same directory as your `.log` files.
