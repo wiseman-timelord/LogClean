@@ -12,6 +12,25 @@ LogClean-Ps is a straightforward and efficient batch and PowerShell script combi
 - **Direct Feedback**: Provides real-time progress updates and completion messages, enhancing the user interaction experience.
 - **Sleep Intervals**: Intentional short pauses after each major action for better tracking of the script's progress.
 
+### PREVIEW
+From this...
+```
+[31;1mGet-GPUList: [0mD:\GameTools\AllTexConFO4-Ps\AllTexConFO4-Ps v0.05\main.ps1:124[0m
+[31;1m[0m[36;1mLine |[0m
+[31;1m[0m[36;1m[36;1m 124 | [0m     $gpuList = [36;1mGet-GPUList[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m                ~~~~~~~~~~~[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mNo '<adapter>:' line found in output.[0m
+```
+...to this...
+```
+Get-GPUList: D:\GameTools\AllTexConFO4-Ps\AllTexConFO4-Ps v0.05\main.ps1:124
+Line |
+ 124 |      $gpuList = Get-GPUList
+     |                 ~~~~~~~~~~~
+     | No '<adapter>:' line found in output.
+```
+...wow!
+
 ### USAGE
 1. Drop the "LogClean-Ps" batch and PowerShell scripts in the same directory as your `.log` files.
 2. Run the "LogClean-Ps.Bat" file.
