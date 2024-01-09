@@ -33,10 +33,10 @@ Line |
 
 ### USAGE
 1. Drop the "LogClean-Ps" batch and PowerShell scripts in the same directory as your `.log` files.
-2. Run the "LogClean-Ps.Bat" file.
+2. Run the "LogClean-Ps.Bat" file, it will execute "logclean-ps.ps1".
 3. The script will automatically identify and process the first `.log` file in the directory.
 4. After completion, review the cleaned log file, which will have the same name as the original.
-5. When you have solved your errors, then delete the files.
+5. When you have solved all your errors, then delete, "LogClean-Ps.Bat" and "logclean-ps.ps1".
 
 ### REQUIREMENTS
 - Windows environment with Batch and PowerShell support.
