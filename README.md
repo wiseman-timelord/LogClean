@@ -46,4 +46,4 @@ Line |
 -This program will require a re-visit at some point, it just does what I need for now.
 
 ### DISCLAIMER
-This program is provided "as is" without warranties or support. Users are responsible for the content they, download and use, as well as, any resulting damage to, hardware or sanity.
+Read "License.Txt", its, what its there for and why its supplied with the package.
