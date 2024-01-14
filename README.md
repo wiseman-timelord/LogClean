@@ -45,5 +45,5 @@ Line |
 ### NOTATION
 -This program will require a re-visit at some point, it just does what I need for now.
 
-### DISCLAIMER
-Read "License.Txt", its, what its there for and why its supplied with the package.
+## DISCLAIMER
+The "License.Txt" covers, this and relating, stuff.
