@@ -1,7 +1,8 @@
 # LogClean-Ps
 
 ### STATUS: 
-Working. Early version, functional but pending further development and testing.
+Working. Possible upgrades are...
+- Integration into ScriptClean.
 
 ### DESCRIPTION
 LogClean-Ps is a straightforward and efficient batch and PowerShell script combination designed for cleaning `.log` files in a given directory by removing ANSI codes. This tool is particularly handy for users who regularly work with log files that contain cluttered and hard-to-read ANSI escape sequences. By automating the cleaning process, LogClean-Ps saves time and effort, making log files more readable and easier to analyze. Intended for NotePad++ users, so they can input error.log files into GPT, but, obviously other people may like it for their own reasoning.
