@@ -3,7 +3,7 @@
 ### STATUS: 
 Working. Revisited on 2024/01/25.
 
-### DESCRIPTION
+## DESCRIPTION
 LogClean-Ps is a straightforward and efficient batch and PowerShellCore/PowerShell script combination designed for cleaning `.log` files in a given directory by removing ANSI codes. This tool is particularly handy for users who regularly work with log files that contain cluttered and hard-to-read ANSI escape sequences, that you would rather just display in, Notepad or Notepad++. By automating the cleaning process, LogClean-Ps saves time and effort, making log files more readable and easier to analyze. Intended for users, whom dont want to clean log files before input into GPT, but, obviously other people may like it for their own reasoning.
 
 ### FEATURES
@@ -31,7 +31,7 @@ Line |
      | No '<adapter>:' line found in output.
 ```
 
-### USAGE
+## USAGE
 1. Drop the "LogClean-Ps" batch and PowerShell scripts in the same directory as your `.log` files.
 2. Run the "LogClean-Ps.Bat" file, it will execute "logclean-ps.ps1".
 3. The script will automatically identify and process the first `.log` file in the directory.
