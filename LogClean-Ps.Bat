@@ -1,20 +1,36 @@
 REM Script: LogClean-Ps
-
 @echo off
-echo.
 
 :: Initialization
-echo Initialization Started...
+mode con cols=35 lines=17
+color 80
+title LogClean-Ps
 cd /d "%~dp0"
-echo ...Initialization Completed.
+echo.
+echo LogClean Started...
+echo.
 echo.
 timeout /t 1 /nobreak >nul
 
 :: Run SCript
-echo Starting Cleaning...
-echo.
 timeout /t 1 /nobreak >nul
-PowerShell -NoProfile -ExecutionPolicy Bypass -File "logclean-ps.ps1"
+where pwsh >nul 2>&1
+if %ERRORLEVEL% equ 0 (
+    echo Launching PowerShellCore Script..
+	echo.
+    timeout /t 2 /nobreak >nul
+    pwsh.exe -NoProfile -ExecutionPolicy Bypass -File ".\logclean-ps.ps1" 2>".\Errors-Crash.Log"
+    echo ..Main Script Has Exited.
+	echo.
+) else (
+    echo Launching PowerShell Script..
+    timeout /t 2 /nobreak >nul
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\logclean-ps.ps1" 2>".\Errors-Crash.Log"
+    echo ..Main Script Has Exited.
+	echo.
+)
 echo.
-echo Cleaning Completed.
-timeout /t 2 /nobreak >nul
+
+:: Exit Procedure
+echo ...Exit Initiated.
+timeout /t 5 /nobreak >nul

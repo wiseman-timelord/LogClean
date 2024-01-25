@@ -1,6 +1,5 @@
 # Script: LogClean-Ps
 
-
 Write-Host "Operations Starting..."
 
 # Searching for the first .log file in the current directory
@@ -10,18 +9,19 @@ if ($logFiles.Count -eq 0) {
     exit
 }
 $filePath = $logFiles[0].FullName
+$fileName = $logFiles[0].Name  # Extracts just the filename
 
-Write-Host "Reading $filePath"
+Write-Host "Reading: $fileName"
 Start-Sleep -Seconds 1
 $originalContent = Get-Content $filePath
 
-Write-Host "Removing ANSI codes..."
+Write-Host "Removing ANSI codes.."
 Start-Sleep -Seconds 1
 $regex = '\u001b\[[0-9;]*[mK]'  # Updated regex for matching ANSI codes
 $filteredContent = $originalContent | Foreach-Object { $_ -replace $regex, '' }
 
 $filteredFilePath = "$filePath"
-Write-Host "Writing $filteredFilePath"
+Write-Host "Writing: $fileName"
 Start-Sleep -Seconds 1
 $filteredContent | Set-Content $filteredFilePath
 
