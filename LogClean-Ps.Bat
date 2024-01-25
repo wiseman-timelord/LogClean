@@ -1,4 +1,4 @@
-REM Script: LogClean-Ps
+REM Script: LogClean-Ps.Bat
 @echo off
 
 :: Initialization
@@ -19,13 +19,13 @@ if %ERRORLEVEL% equ 0 (
     echo Launching PowerShellCore Script..
 	echo.
     timeout /t 2 /nobreak >nul
-    pwsh.exe -NoProfile -ExecutionPolicy Bypass -File ".\logclean-ps.ps1" 2>".\Errors-Crash.Log"
+    pwsh.exe -NoProfile -ExecutionPolicy Bypass -File ".\logclean-ps.ps1"
     echo ..Main Script Has Exited.
 	echo.
 ) else (
     echo Launching PowerShell Script..
     timeout /t 2 /nobreak >nul
-    powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\logclean-ps.ps1" 2>".\Errors-Crash.Log"
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\logclean-ps.ps1"
     echo ..Main Script Has Exited.
 	echo.
 )
