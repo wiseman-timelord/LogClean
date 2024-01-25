@@ -28,4 +28,4 @@ $filteredContent | Set-Content $filteredFilePath
 # Exit Script
 Write-Host "...Operations completed."
 Write-Host
-Start-Sleep -Seconds 3
+Start-Sleep -Seconds 1
