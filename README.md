@@ -1,10 +1,10 @@
-# LogClean-Ps
+# LogClean
 
 ### STATUS: 
 Working. Revisited on 2024/01/25.
 
 ## DESCRIPTION
-LogClean-Ps is a straightforward and efficient batch and PowerShellCore/PowerShell script combination designed for cleaning `.log` files in a given directory by removing ANSI codes. This tool is particularly handy for users who regularly work with log files that contain cluttered and hard-to-read ANSI escape sequences, that you would rather just display in, Notepad or Notepad++. By automating the cleaning process, LogClean-Ps saves time and effort, making log files more readable and easier to analyze. Intended for users, whom dont want to clean log files before input into GPT, but, obviously other people may like it for their own reasoning.
+LogClean is a straightforward and efficient batch and PowerShellCore/PowerShell script combination designed for cleaning `.log` files in a given directory by removing ANSI codes. This tool is particularly handy for users who regularly work with log files that contain cluttered and hard-to-read ANSI escape sequences, that you would rather just display in, Notepad or Notepad++. By automating the cleaning process, LogClean saves time and effort, making log files more readable and easier to analyze. Intended for users, whom dont want to clean log files before input into GPT, but, obviously other people may like it for their own reasoning.
 
 ### FEATURES
 - **Automated Cleaning**: Automatically finds and cleans the first `.log` file in the current directory, removing all ANSI codes.
@@ -32,12 +32,12 @@ Line |
 ```
 
 ## USAGE
-1. Drop the "LogClean-Ps" batch and PowerShell scripts in the same directory as your `.log` files.
+1. Drop the "LogClean" batch and PowerShell scripts in the same directory as your `.log` files.
 2. Ensure any programs locking the log you intend to clean are closed (ie notepad, the program), if LogClean has errors it will be this.
-3. Run the "LogClean-Ps.Bat" file, it will execute "logclean-ps.ps1".
+3. Run the "LogClean.Bat" file, it will execute "logclean-ps.ps1".
 4. The script will automatically identify and process the first `.log` file in the directory.
 5. After completion, review the cleaned log file, which will have the same name as the original.
-6. When you have solved all your errors, then delete, "LogClean-Ps.Bat" and "logclean-ps.ps1".
+6. When you have solved all your errors, then delete, "LogClean.Bat" and "logclean-ps.ps1".
 
 ### REQUIREMENTS
 - Windows environment with Batch support.
